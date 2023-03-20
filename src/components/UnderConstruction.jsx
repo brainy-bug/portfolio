@@ -13,10 +13,11 @@ const UnderConstruction = () => {
     },
     img: {
       margin: "auto",
-      width: "300px",
+      width: "200px",
     },
     h2: {
       marginTop: "3rem",
+      textAlign: "center",
     },
   };
 
@@ -24,7 +25,7 @@ const UnderConstruction = () => {
     <container style={styles.container}>
       <img src={construction} alt='under-construction' style={styles.img} />
       <h2 className='h2' style={styles.h2}>
-        Currently under construction
+        Under construction
       </h2>
     </container>
   );
