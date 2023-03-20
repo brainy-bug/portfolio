@@ -1,3 +1,4 @@
+import Services from "../components/Services";
 import { useAppContext } from "../contexts/AppContext";
 
 const About = () => {
@@ -23,7 +24,7 @@ const About = () => {
           the most creative way.
         </p>
       </section>
-      
+      <Services />
     </article>
   );
 };

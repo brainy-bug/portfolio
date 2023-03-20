@@ -1,3 +1,6 @@
+import designSVG from "../assets/images/icon-design.svg";
+import webSVG from "../assets/images/icon-dev.svg";
+
 export const contacts = [
   {
     id: 1,
@@ -77,6 +80,30 @@ export const navLinks = [
     text: "Contact",
     url: "/contact",
   },
+];
+
+export const services = [
+  {
+    id: 1,
+    title: "Graphic design",
+    image: designSVG,
+    description:
+      "Designs created at a professional level with the latest and top-notch techniques.",
+  },
+  {
+    id: 2,
+    title: "Web development",
+    image: webSVG,
+    description:
+      " High-quality development of sites at the professional level.",
+  },
+  // {
+  //   id: 3,
+  //   title: "Web development",
+  //   image: { webSVG },
+  //   description:
+  //     "The most modern and high-quality design made at a professional level.",
+  // },
 ];
 
 export const products_url = "https://course-api.com/react-store-products";

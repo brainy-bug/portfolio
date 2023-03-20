@@ -5,11 +5,11 @@ import SocialLists from "./SocialLists";
 import { useAppContext } from "../contexts/AppContext";
 
 const Sidebar = () => {
-  const { isActive, setIsActive } = useAppContext();
+  const { isActive } = useAppContext();
 
   return (
     <aside className={`${isActive ? "sidebar active" : "sidebar"} `}>
-      <AvatarInfoBox isActive={isActive} setIsActive={setIsActive} />
+      <AvatarInfoBox />
       <div className='sidebar-info_more'>
         <div className='separator'></div>
         <ContactLists />
