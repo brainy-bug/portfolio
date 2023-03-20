@@ -69,6 +69,10 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .env
 .env.test
 
@@ -102,3 +106,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# misc
+.DS_Store
+
+# Local Netlify folder
+.netlify
