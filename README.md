@@ -23,7 +23,7 @@ I'm currently developing a chatbot feature that will allow visitors to interact 
 
 ## Getting started
 
-Click on [http://devyinka.vercel.app](my portfolio) to view the website on any web browser.
+Click on (https://devyinka.vercel.app)[my portfolio] to view the website on any web browser.
 
 ## Contributions
 
