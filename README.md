@@ -11,10 +11,11 @@ This website is built using the following technologies:
 
 ## Features
 
-- Home page: introduces myself and provides a brief overview of my skills and interests.
-- Projects page: displays my past and current projects with descriptions, screenshots, and links to live demos or repositories.
-- Skills page: lists my technical skills and programming languages with proficiency levels.
+- Home/About page: introduces myself and provides a brief overview of my skills and interests.
+- Portfolio page: displays my past and current projects with descriptions, screenshots, and links to live demos or repositories.
 - Contact page: provides a contact form to send me a message or connect with me on social media.
+
+The Home/About page also lists my technical skills and programming languages with proficiency levels.
 
 ### Chatbot (coming soon)
 
@@ -22,7 +23,7 @@ I'm currently developing a chatbot feature that will allow visitors to interact 
 
 ## Getting started
 
-I will provide a link to view the website on any web browser soon.
+Click on -> [my portfolio](https://devyinka.vercel.app) to view the website on any web browser.
 
 ## Contributions
 
