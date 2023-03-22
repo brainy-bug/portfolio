@@ -1,8 +1,17 @@
+import { useEffect } from "react";
 import Services from "../components/Services";
 import { useAppContext } from "../contexts/AppContext";
 
 const About = () => {
   const { isPageActive } = useAppContext();
+
+  useEffect(() => {
+    alert(
+      `Welcome to my portfolio website!🥰
+      
+Kindly note that the website is still under construction. Thank you for your patience! 🤗🤗`
+    );
+  }, []);
 
   return (
     <article className={`${!isPageActive ? "about active" : "about"}`}>
