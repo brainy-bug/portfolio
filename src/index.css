@@ -64,6 +64,8 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
 
   /**
    * typography
@@ -2035,5 +2037,42 @@ textarea.form-input::-webkit-resizer {
 }
 
 /*-----------------------------------*\
-  #construction
+  #error page
 \*-----------------------------------*/
+
+.error {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+s}
+
+.error .h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+
+.error-text{color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+.btn {
+  text-transform: uppercase;
+  background: var(--orange-yellow-crayola);
+  color: var(--eerie-black-1);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 400;
+  transition: var(--transition-1);
+  font-size: 0.875rem;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  border-color: transparent;
+}
+/* .btn:hover {
+} */

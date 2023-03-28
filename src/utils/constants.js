@@ -97,15 +97,47 @@ export const services = [
     description:
       " High-quality development of sites at the professional level.",
   },
-  // {
-  //   id: 3,
-  //   title: "Web development",
-  //   image: { webSVG },
-  //   description:
-  //     "The most modern and high-quality design made at a professional level.",
-  // },
 ];
 
+export const education = [
+  {
+    id: 1,
+    title: "University of Ibadan",
+    entry_year: "2019",
+    final_year: "present",
+    text: "Studying Agricultural and Environmental Engineering",
+  },
+  {
+    id: 2,
+    title: "Lagos State Model College, Igbonla",
+    entry_year: "2012",
+    final_year: "2018",
+    text: "High school",
+  },
+];
+
+export const skills = [
+  {
+    skill: "Graphic Design",
+    progress: "85",
+  },
+  {
+    skill: "React",
+    progress: "68",
+  },
+  // {
+  //   skill: "Graphic Design",
+  //   progress: "85",
+  // },
+  // {
+  //   skill: "Graphic Design",
+  //   progress: "85",
+  // },
+  // {
+  //   skill: "Graphic Design",
+  //   progress: "85",
+  // },
+];
 export const products_url = "https://course-api.com/react-store-products";
 
 export const single_product_url = `https://course-api.com/react-store-single-product?id=`;

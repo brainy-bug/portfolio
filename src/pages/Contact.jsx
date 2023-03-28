@@ -1,4 +1,4 @@
-import UnderConstruction from "../components/UnderConstruction";
+import ContactForm from "../components/ContactForm";
 import { useAppContext } from "../contexts/AppContext";
 
 const Contact = () => {
@@ -9,7 +9,7 @@ const Contact = () => {
       <header>
         <h2 className='h2 article-title'>Contact</h2>
       </header>
-      <UnderConstruction />
+      <ContactForm />
     </article>
   );
 };

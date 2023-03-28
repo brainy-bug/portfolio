@@ -1,4 +1,6 @@
 import UnderConstruction from "../components/UnderConstruction";
+import Education from "../components/Education";
+import Skills from "../components/Skills";
 import { useAppContext } from "../contexts/AppContext";
 
 const Resume = () => {
@@ -10,6 +12,10 @@ const Resume = () => {
         <h2 className='h2 article-title'>Resume</h2>
       </header>
       <UnderConstruction />
+      {/* <Education /> */}
+      {/* <Experience/> */}
+      {/* <Skills/> */}
+
     </article>
   );
 };

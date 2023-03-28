@@ -4,11 +4,14 @@ import "./index.css";
 import App from "./App";
 
 import { AppProvider } from "./contexts/AppContext";
+import { FormProvider } from "./contexts/FormContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AppProvider>
-      <App />
+      <FormProvider>
+        <App />
+      </FormProvider>
     </AppProvider>
   </React.StrictMode>
 );
