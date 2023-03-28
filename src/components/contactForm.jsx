@@ -41,7 +41,7 @@ const contactForm = () => {
 
         <button className='form-btn' type='submit'>
           {isSubmitting ? (
-            <span>Sending...</span>
+            <span>Sending..</span>
           ) : (
             <>
               <ion-icon name='paper-plane'></ion-icon>
