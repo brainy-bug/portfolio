@@ -48,7 +48,7 @@ const ContactForm = () => {
             </>
           )}
         </button>
-        <ToastContainer autoClose={1500} />
+        <ToastContainer autoClose={1500} theme="dark"/>
       </form>
     </section>
   );
