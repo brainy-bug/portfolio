@@ -2,7 +2,7 @@ import { useFormContext } from "../contexts/FormContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const contactForm = () => {
+const ContactForm = () => {
   const { handleSubmit, handleChange, fullname, email, message, isSubmitting } =
     useFormContext();
   return (
@@ -41,7 +41,7 @@ const contactForm = () => {
 
         <button className='form-btn' type='submit'>
           {isSubmitting ? (
-            <span>Sending..</span>
+            <span>Sending...</span>
           ) : (
             <>
               <ion-icon name='paper-plane'></ion-icon>
@@ -54,4 +54,4 @@ const contactForm = () => {
     </section>
   );
 };
-export default contactForm;
+export default ContactForm;
