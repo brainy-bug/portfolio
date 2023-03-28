@@ -44,7 +44,7 @@ export const FormProvider = ({ children }) => {
       if (response.ok) {
         setIsSubmitting(false);
         handleClearForm();
-        toast.success("Message sent successfully");
+        toast.success("Form submitted successfully");
       } else throw new Error("There was an error submitting the form");
 
       // show success message to the user

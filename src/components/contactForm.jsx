@@ -1,6 +1,5 @@
 import { useFormContext } from "../contexts/FormContext";
 import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
   const { handleSubmit, handleChange, fullname, email, message, isSubmitting } =
