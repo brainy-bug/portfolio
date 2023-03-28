@@ -1,4 +1,4 @@
-import ContactForm from "../components/ContactForm";
+import ContactForm from "../components/contactForm";
 import { useAppContext } from "../contexts/AppContext";
 
 const Contact = () => {
