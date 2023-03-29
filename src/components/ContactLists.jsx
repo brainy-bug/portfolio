@@ -19,7 +19,7 @@ const ContactLists = () => {
                   {linkText}
                 </a>
               )}
-              {date && <time datetime={dateTime}>{date}</time>}
+              {date && <time dateTime={dateTime}>{date}</time>}
               {address && <address>{address}</address>}
             </div>
           </li>
