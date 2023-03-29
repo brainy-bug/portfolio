@@ -1,4 +1,5 @@
 import ContactForm from "../components/contactForm";
+import Map from "../components/Map";
 import { useAppContext } from "../contexts/AppContext";
 
 const Contact = () => {
@@ -9,6 +10,7 @@ const Contact = () => {
       <header>
         <h2 className='h2 article-title'>Contact</h2>
       </header>
+      <Map />
       <ContactForm />
     </article>
   );
