@@ -6,7 +6,6 @@ const ContactForm = () => {
     useFormContext();
   return (
     <section className='contact-form'>
-      <h3 class='h3 form-title'>Let's talk.</h3>
 
       <form className='form' onSubmit={handleSubmit}>
         <div className='input-wrapper'>
