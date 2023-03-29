@@ -17,11 +17,9 @@ const About = () => {
           complex problems into simple, beautiful and intuitive designs.
         </p>
         <p>
-          My job is to build your website so that it is functional and
-          user-friendly but at the same time, attractive. Moreover, I add
-          personal touch to your product and make sure it is eye-catching and
-          easy to use. My aim is to bring across your message and identity in
-          the most creative way.
+          I design websites that are both practical and visually appealing, with
+          a personal touch. My goal is to showcase your message and identity in
+          the most creative way possible.
         </p>
       </section>
       <Services />
