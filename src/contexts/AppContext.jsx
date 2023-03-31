@@ -5,19 +5,18 @@ const AppContext = React.createContext();
 export const AppProvider = ({ children }) => {
   const [isActive, setIsActive] = useState(false);
   const [isPageActive, setIsPageActive] = useState(false);
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = ()=>{
-    
-  }
+  const [isFilterActive, setIsFilterActive] = useState(true);
 
   return (
     <AppContext.Provider
-      value={{ isActive, setIsActive, isPageActive, setIsPageActive }}
+      value={{
+        isActive,
+        setIsActive,
+        isPageActive,
+        setIsPageActive,
+        isFilterActive,
+        setIsFilterActive,
+      }}
     >
       {children}
     </AppContext.Provider>

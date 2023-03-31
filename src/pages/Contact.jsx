@@ -1,5 +1,7 @@
-import ContactForm from "../components/contactForm";
+import React from "react";
+import ContactForm from "../components/Contact/contactForm";
 import Map from "../components/Map";
+
 import { useAppContext } from "../contexts/AppContext";
 
 const Contact = () => {
@@ -15,4 +17,5 @@ const Contact = () => {
     </article>
   );
 };
+
 export default Contact;

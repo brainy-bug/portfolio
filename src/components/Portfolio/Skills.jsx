@@ -1,4 +1,5 @@
-import { skills } from "../utils/constants";
+import { skills } from "../../utils/constants";
+import React from "react";
 
 const Skills = () => {
   return (

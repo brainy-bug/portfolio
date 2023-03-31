@@ -1,8 +1,9 @@
-import AvatarInfoBox from "./AvatarInfoBox";
-import ContactLists from "./ContactLists";
-import SocialLists from "./SocialLists";
+import AvatarInfoBox from "../AvatarInfoBox";
+import ContactLists from "../Contact/ContactLists";
+import SocialLists from "../SocialLists";
 
-import { useAppContext } from "../contexts/AppContext";
+import { useAppContext } from "../../contexts/AppContext";
+import React from "react";
 
 const Sidebar = () => {
   const { isActive } = useAppContext();

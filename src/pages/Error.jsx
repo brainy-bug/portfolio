@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useAppContext } from "../contexts/AppContext";
+import React from "react";
 
 const Error = () => {
   const { isPageActive } = useAppContext();

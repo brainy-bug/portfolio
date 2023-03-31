@@ -1,3 +1,4 @@
+import React from "react";
 import avatarIMG from "../assets/images/my-avatar.png";
 import { useAppContext } from "../contexts/AppContext";
 

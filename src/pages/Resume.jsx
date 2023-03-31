@@ -1,6 +1,7 @@
+import React from "react";
+import Skills from "../components/Portfolio/Skills";
 import UnderConstruction from "../components/UnderConstruction";
 import Education from "../components/Education";
-import Skills from "../components/Skills";
 import { useAppContext } from "../contexts/AppContext";
 
 const Resume = () => {
@@ -15,8 +16,8 @@ const Resume = () => {
       {/* <Education /> */}
       {/* <Experience/> */}
       {/* <Skills/> */}
-
     </article>
   );
 };
+
 export default Resume;

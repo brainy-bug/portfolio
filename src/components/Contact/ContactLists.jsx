@@ -1,4 +1,5 @@
-import { contacts } from "../utils/constants";
+import { contacts } from "../../utils/constants";
+import React from "react";
 
 const ContactLists = () => {
   return (
