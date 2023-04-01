@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import avatarIMG from "../assets/images/my-avatar.png";
-import { useAppContext } from "../contexts/AppContext";
 
-const AvatarInfoBox = () => {
-  const { isActive, setIsActive } = useAppContext();
+const AvatarInfoBox = ({ isActive, setIsActive }) => {
+
   return (
     <div className='sidebar-info'>
       <figure className='avatar-box'>

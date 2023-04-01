@@ -1,16 +1,15 @@
+import { useState } from "react";
+
 import AvatarInfoBox from "../AvatarInfoBox";
 import ContactLists from "../Contact/ContactLists";
 import SocialLists from "../Contact/SocialLists";
 
-import { useAppContext } from "../../contexts/AppContext";
-import React from "react";
-
 const Sidebar = () => {
-  const { isActive } = useAppContext();
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <aside className={`${isActive ? "sidebar active" : "sidebar"} `}>
-      <AvatarInfoBox />
+      <AvatarInfoBox isActive={isActive} setIsActive={setIsActive} />
       <div className='sidebar-info_more'>
         <div className='separator'></div>
         <ContactLists />
