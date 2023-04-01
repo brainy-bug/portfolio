@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { services } from "../../utils/constants";
 
 const Services = () => {
@@ -8,7 +9,13 @@ const Services = () => {
       <ul className='service-list'>
         {services.map(({ title, id, image, description }) => {
           return (
-            <li className='service-item' key={id}>
+            <motion.li
+              className='service-item'
+              key={id}
+              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              transition={{ delay: 0.8 }}
+            >
               <div className='service-icon-box'>
                 <img src={image} alt={title} width='40' />
               </div>
@@ -18,7 +25,7 @@ const Services = () => {
 
                 <p className='service-item-text'>{description}</p>
               </div>
-            </li>
+            </motion.li>
           );
         })}
       </ul>
