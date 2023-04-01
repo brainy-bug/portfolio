@@ -1,4 +1,4 @@
-import FadeInWhenVisible from "../components/FadeInWhenVisible";
+import AnimatedSection from "../components/AnimatedSection";
 import Services from "../components/Portfolio/Services";
 
 import { useAppContext } from "../contexts/AppContext";
@@ -9,25 +9,25 @@ const About = () => {
   return (
     <article className={`${!isPageActive ? "about active" : "about"}`}>
       <header>
-        <FadeInWhenVisible>
+        <AnimatedSection>
           <h2 className='h2 article-title'>About me</h2>
-        </FadeInWhenVisible>
+        </AnimatedSection>
       </header>
       <section className='about-text'>
-        <FadeInWhenVisible>
+        <AnimatedSection>
           <p>
             Hello 👋, I am a frontend developer with a specialization in React
             and a graphic designer hailing from Lagos, Nigeria. I enjoy turning
             complex problems into simple, beautiful and intuitive designs.
           </p>
-        </FadeInWhenVisible>
-        <FadeInWhenVisible>
+        </AnimatedSection>
+        <AnimatedSection>
           <p>
             I design websites that are both practical and visually appealing,
             with a personal touch. My goal is to showcase your message and
             identity in the most creative way possible.
           </p>
-        </FadeInWhenVisible>
+        </AnimatedSection>
       </section>
 
       <Services />

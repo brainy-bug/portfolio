@@ -3,6 +3,7 @@ import UnderConstruction from "../components/UnderConstruction";
 import { useAppContext } from "../contexts/AppContext";
 
 import Projects from "../components/Portfolio/Projects";
+import AnimatedSection from "../components/AnimatedSection";
 
 const Portfolio = () => {
   const { isPageActive } = useAppContext();
@@ -10,10 +11,14 @@ const Portfolio = () => {
   return (
     <article className={`${!isPageActive ? "portfolio active" : "portfolio"}`}>
       <header>
-        <h2 className='h2 article-title'>Portfolio</h2>
+        <AnimatedSection>
+          <h2 className='h2 article-title'>Portfolio</h2>
+        </AnimatedSection>
       </header>
-      <Projects />
-      <UnderConstruction />
+      <AnimatedSection>
+        <Projects />
+        <UnderConstruction />
+      </AnimatedSection>
     </article>
   );
 };

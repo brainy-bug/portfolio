@@ -5,7 +5,7 @@ const AppContext = React.createContext();
 export const AppProvider = ({ children }) => {
   const [isActive, setIsActive] = useState(false);
   const [isPageActive, setIsPageActive] = useState(false);
-  const [isFilterActive, setIsFilterActive] = useState(true);
+  const [isSelectBtnActive, setIsSelectBtnActive] = useState(false);
 
   return (
     <AppContext.Provider
@@ -14,8 +14,8 @@ export const AppProvider = ({ children }) => {
         setIsActive,
         isPageActive,
         setIsPageActive,
-        isFilterActive,
-        setIsFilterActive,
+        isSelectBtnActive,
+        setIsSelectBtnActive,
       }}
     >
       {children}

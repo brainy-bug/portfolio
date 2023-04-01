@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const FadeInWhenVisible = ({ children }) => {
+const AnimatedSection = ({ children }) => {
   const { ref, inView } = useInView({
     threshold: 0.2,
     triggerOnce: true,
@@ -21,4 +21,4 @@ const FadeInWhenVisible = ({ children }) => {
   );
 };
 
-export default FadeInWhenVisible;
+export default AnimatedSection;
