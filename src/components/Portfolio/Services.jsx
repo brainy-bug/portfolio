@@ -1,7 +1,4 @@
-import React from "react";
-
 import { services } from "../../utils/constants";
-import AnimatedSection from "../AnimatedSection";
 
 const Services = () => {
   return (

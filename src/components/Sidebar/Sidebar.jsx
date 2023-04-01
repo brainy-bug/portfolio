@@ -1,6 +1,6 @@
 import AvatarInfoBox from "../AvatarInfoBox";
 import ContactLists from "../Contact/ContactLists";
-import SocialLists from "../SocialLists";
+import SocialLists from "../Contact/SocialLists";
 
 import { useAppContext } from "../../contexts/AppContext";
 import React from "react";
