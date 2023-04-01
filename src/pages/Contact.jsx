@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../components/Contact/contactForm";
+import ContactForm from "../components/Contact/ContactForm";
 import Map from "../components/Map";
 import AnimatedSection from "../components/AnimatedSection";
 

@@ -138,6 +138,11 @@ export const skills = [
   //   progress: "85",
   // },
 ];
+
+
+export const category = [
+  "All","Graphic Design","Web Development"
+]
 export const products_url = "https://course-api.com/react-store-products";
 
 export const single_product_url = `https://course-api.com/react-store-single-product?id=`;

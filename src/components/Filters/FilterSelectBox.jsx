@@ -1,12 +1,20 @@
-import { useAppContext } from "../../contexts/AppContext";
+import { useState } from "react";
 import FilterSelectList from "./FilterSelectList";
 
 const FilterSelectBox = () => {
-  const { isSelectBtnActive, setIsSelectBtnActive } = useAppContext();
+  const [isSelectBtnActive, setIsSelectBtnActive] = useState(false);
+  const [updatedCategory, setUpdatedCategory] = useState("All");
+
+  const filterProps = {
+    updatedCategory,
+    isSelectBtnActive,
+    setUpdatedCategory,
+    setIsSelectBtnActive,
+  };
 
   return (
     <>
-      <FilterSelectList />
+      <FilterSelectList filterProps={filterProps} />
       <div className='filter-select-box'>
         <button
           className={`${
@@ -14,7 +22,9 @@ const FilterSelectBox = () => {
           }`}
           onClick={() => setIsSelectBtnActive((prev) => !prev)}
         >
-          <div className='select-value'>Select category</div>
+          <div className='select-value'>{`${
+            updatedCategory === "All" ? "Select category" : updatedCategory
+          }`}</div>
 
           <div className='select-icon'>
             <ion-icon
@@ -22,7 +32,7 @@ const FilterSelectBox = () => {
             ></ion-icon>
           </div>
         </button>
-        <FilterSelectList isSelectBtnActive={isSelectBtnActive} />
+        <FilterSelectList filterProps={filterProps} />
       </div>
     </>
   );
