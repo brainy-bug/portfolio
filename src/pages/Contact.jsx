@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "../components/Contact/contactForm";
 import Map from "../components/Map";
+import FadeInWhenVisible from "../components/FadeInWhenVisible";
 
 import { useAppContext } from "../contexts/AppContext";
 
@@ -10,10 +11,16 @@ const Contact = () => {
   return (
     <article className={`${!isPageActive ? "contact active" : "contact"}`}>
       <header>
-        <h2 className='h2 article-title'>Get in touch</h2>
+        <FadeInWhenVisible>
+          <h2 className='h2 article-title'>Get in touch</h2>
+        </FadeInWhenVisible>
       </header>
-      <Map />
-      <ContactForm />
+      <FadeInWhenVisible>
+        <Map />
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
+        <ContactForm />
+      </FadeInWhenVisible>
     </article>
   );
 };
