@@ -10,8 +10,8 @@ const Services = () => {
       <ul className='service-list'>
         {services.map(({ title, id, image, description }) => {
           return (
-            <AnimatedSection>
-              <li className='service-item' key={id}>
+            <AnimatedSection key={id}>
+              <li className='service-item'>
                 <div className='service-icon-box'>
                   <img src={image} alt={title} width='40' />
                 </div>
