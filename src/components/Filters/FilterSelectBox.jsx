@@ -15,7 +15,9 @@ const FilterSelectBox = () => {
           <div className='select-value'>Select category</div>
 
           <div className='select-icon'>
-            <ion-icon name='chevron-down'></ion-icon>
+            <ion-icon
+              name={`chevron-${isFilterActive ? "up" : "down"}`}
+            ></ion-icon>
           </div>
         </button>
         <FilterSelectList isFilterActive={isFilterActive} />
