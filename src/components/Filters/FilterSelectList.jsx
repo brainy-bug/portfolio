@@ -1,13 +1,9 @@
 import { useState } from "react";
 import { category } from "../../utils/constants";
 
-const FilterSelectList = ({ filterProps = {} }) => {
-  const {
-    isSelectBtnActive,
-    setIsSelectBtnActive,
-    updatedCategory,
-    setUpdatedCategory,
-  } = filterProps;
+const FilterSelectList = ({ filterProps = {}, isSelectBtnActive }) => {
+  const { setIsSelectBtnActive, updatedCategory, setUpdatedCategory } =
+    filterProps;
 
   const updateCategory = (e) => {
     setUpdatedCategory(e.target.textContent);

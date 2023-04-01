@@ -7,7 +7,6 @@ const FilterSelectBox = () => {
 
   const filterProps = {
     updatedCategory,
-    isSelectBtnActive,
     setUpdatedCategory,
     setIsSelectBtnActive,
   };
@@ -32,7 +31,10 @@ const FilterSelectBox = () => {
             ></ion-icon>
           </div>
         </button>
-        <FilterSelectList filterProps={filterProps} />
+        <FilterSelectList
+          filterProps={filterProps}
+          isSelectBtnActive={isSelectBtnActive}
+        />
       </div>
     </>
   );
