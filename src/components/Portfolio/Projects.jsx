@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 import { useFilterContext } from "../../contexts/FilterContext";
 import { useProjectsContext } from "../../contexts/ProjectContext";
@@ -6,7 +5,6 @@ import { useProjectsContext } from "../../contexts/ProjectContext";
 import { ColorRing } from "react-loader-spinner";
 
 const Projects = () => {
-  const [refreshKey, setRefreshKey] = useState(0);
   const { filteredProjects: projects } = useFilterContext();
   const { projectsError, projectsLoading } = useProjectsContext();
 
@@ -37,7 +35,7 @@ const Projects = () => {
         <h2 className='h2'>Unable to fetch projects</h2>
         <button
           className='btn'
-          onClick={() => setRefreshKey((prevKey) => prevKey + 1)}
+          onClick={() => window.location.reload()}
         >
           reload
         </button>
