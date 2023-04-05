@@ -11,6 +11,7 @@ export const FilterProvider = ({ children }) => {
 
   useEffect(() => {
     setAllProjects([...projects]);
+    setFilteredProjects([...projects]);
     const allCategories = [
       "All",
       ...new Set(allProjects.map((item) => item.category)),
