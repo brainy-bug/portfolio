@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Skeleton from "react-loading-skeleton";
 import { useFilterContext } from "../../contexts/FilterContext";
 
@@ -6,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 import { useProjectsContext } from "../../contexts/ProjectContext";
 
 const Projects = () => {
+  const [refreshKey, setRefreshKey]
   const { filteredProjects: projects } = useFilterContext();
   const { projectsError, projectsLoading } = useProjectsContext();
 
@@ -30,8 +32,8 @@ const Projects = () => {
     return (
       <section style={styles.container}>
         <h2 className='h2'>Unable to fetch projects</h2>
-        <button className='btn' onClick={() => window.location.reload()}>
-          reload page
+        <button className='btn' onClick={() => setRefreshKey(prevKey => prevKey + 1)}>
+        Reload Projects
         </button>
       </section>
     );
