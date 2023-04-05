@@ -18,6 +18,10 @@ const Projects = () => {
       justifyContent: "center",
       margin: "5rem auto",
     },
+    h2: {
+      fontSize: "1.5rem",
+      marginBottom: "1rem",
+    },
   };
 
   if (projectsLoading)
