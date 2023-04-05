@@ -1,24 +1,19 @@
-const axios = require('axios');
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 dotenv.config();
 
-const API_KEY = process.env.AIRTABLE_API_KEY;
-const BASE = process.env.AIRTABLE_BASE;
-const TABLE = process.env.AIRTABLE_TABLE;
+const Airtable = require("airtable-node");
+const airtable = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY })
+  .base(process.env.AIRTABLE_BASE)
+  .table(process.env.AIRTABLE_TABLE);
 
 export async function handler() {
   try {
-    const response = await axios.get(
-      `https://api.airtable.com/v0/${BASE}/${TABLE}?maxRecords=200&view=Grid%20view&sort%5B0%5D%5Bfield%5D=name&sort%5B0%5D%5Bdirection%5D=asc`,
-      {
-        headers: {
-          Authorization: `Bearer ${API_KEY}`,
-          'Content-Type': 'application/json',
-        },
-      }
-    );
+    const response = await airtable.list({
+      maxRecords: 200,
+      sort: [{ field: "name", direction: "asc" }],
+    });
 
-    const projects = response.data.records.map((project) => {
+    const projects = response.records.map((project) => {
       const { id, fields } = project;
       const { name, company, description, category, url, image } = fields;
       const { url: imageURL } = image[0];
@@ -40,7 +35,7 @@ export async function handler() {
   } catch (error) {
     return {
       statusCode: 500,
-      body: 'There was an error',
+      body: "There was an error",
     };
   }
 }
