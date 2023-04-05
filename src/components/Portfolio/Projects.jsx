@@ -1,4 +1,3 @@
-
 import { useFilterContext } from "../../contexts/FilterContext";
 import { useProjectsContext } from "../../contexts/ProjectContext";
 
