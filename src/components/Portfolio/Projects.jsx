@@ -1,11 +1,12 @@
-import Skeleton from "react-loading-skeleton";
-import { useFilterContext } from "../../contexts/FilterContext";
+import { useState,useEffect } from "react";
 
-import { ColorRing } from "react-loader-spinner";
-import { ToastContainer } from "react-toastify";
+import { useFilterContext } from "../../contexts/FilterContext";
 import { useProjectsContext } from "../../contexts/ProjectContext";
 
+import { ColorRing } from "react-loader-spinner";
+
 const Projects = () => {
+  const [refreshKey, setRefreshKey] = useState(0);
   const { filteredProjects: projects } = useFilterContext();
   const { projectsError, projectsLoading } = useProjectsContext();
 
@@ -30,11 +31,16 @@ const Projects = () => {
     return (
       <section style={styles.container}>
         <h2 className='h2'>Unable to fetch projects</h2>
-        <button className='btn' onClick={() => window.location.reload()}>
-          reload page
+        <button
+          className='btn'
+          onClick={() => setRefreshKey((prevKey) => prevKey + 1)}
+        >
+          reload
         </button>
       </section>
     );
+
+  // useEffect(() => {}, [refreshKey]);
 
   return (
     <section className='projects'>

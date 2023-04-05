@@ -24,9 +24,6 @@ export const ProjectsProvider = ({ children }) => {
         return { ...prev, projects, projectsLoading: false };
       });
     } catch (error) {
-      toast.error(
-        "A error occurred while fetching projects. Please try reloading the page."
-      );
       setData((prev) => {
         return { ...prev, projectsError:true, projectsLoading: false };
       });

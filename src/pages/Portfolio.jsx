@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState}from "react";
 // import UnderConstruction from "../components/UnderConstruction";
 import { useAppContext } from "../contexts/AppContext";
 
@@ -10,6 +10,7 @@ import { useFilterContext } from "../contexts/FilterContext";
 const Portfolio = () => {
   const { isPageActive } = useAppContext();
   const { categories } = useFilterContext();
+
   return (
     <article className={`${!isPageActive ? "portfolio active" : "portfolio"}`}>
       <header>
