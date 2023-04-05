@@ -88,7 +88,7 @@ export const services = [
     title: "Graphic design",
     image: designSVG,
     description:
-      "Designs created at a professional level with the latest and top-notch techniques.",
+      " The most modern and high-quality design made at a professional level.",
   },
   {
     id: 2,
@@ -139,10 +139,5 @@ export const skills = [
   // },
 ];
 
-
-export const category = [
-  "All","Graphic Design","Web Development"
-]
-export const products_url = "https://course-api.com/react-store-products";
-
-export const single_product_url = `https://course-api.com/react-store-single-product?id=`;
+export const category = ["All", "Graphic design", "Web development"];
+export const projects_url = "/.netlify/functions/projects";

@@ -1,14 +1,16 @@
 import { useState } from "react";
+import { useFilterContext } from "../../contexts/FilterContext";
 import FilterSelectList from "./FilterSelectList";
 
 const FilterSelectBox = () => {
   const [isSelectBtnActive, setIsSelectBtnActive] = useState(false);
-  const [updatedCategory, setUpdatedCategory] = useState("All");
+  const { categories, singleCategory, setSingleCategory } = useFilterContext();
 
   const filterProps = {
-    updatedCategory,
-    setUpdatedCategory,
+    categories,
     setIsSelectBtnActive,
+    singleCategory,
+    setSingleCategory,
   };
 
   return (
@@ -22,7 +24,7 @@ const FilterSelectBox = () => {
           onClick={() => setIsSelectBtnActive((prev) => !prev)}
         >
           <div className='select-value'>{`${
-            updatedCategory === "All" ? "Select category" : updatedCategory
+            singleCategory === "All" ? "Select category" : singleCategory
           }`}</div>
 
           <div className='select-icon'>

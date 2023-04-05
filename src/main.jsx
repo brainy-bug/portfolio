@@ -2,18 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "react-toastify/dist/ReactToastify.css";
+import "react-loading-skeleton/dist/skeleton.css";
+
 import App from "./App";
 
 import { AppProvider } from "./contexts/AppContext";
 import { FormProvider } from "./contexts/FormContext";
+import { ProjectsProvider } from "./contexts/ProjectContext";
+import { FilterProvider } from "./contexts/FilterContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AppProvider>
-      <FormProvider>
-        <App />
-      </FormProvider>
+      <ProjectsProvider>
+        <FilterProvider>
+          <FormProvider>
+            <App />
+          </FormProvider>
+        </FilterProvider>
+      </ProjectsProvider>
     </AppProvider>
   </React.StrictMode>
 );
-// patGeRpmH5XaAr8Nr.0829f9589cf6c020ac84867fc06cd5d02ea6211633820410d4400251a8773f26
+
