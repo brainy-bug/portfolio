@@ -1,2 +1,8 @@
 [build]
 functions = './api'
+
+[[plugins]]
+  package = "netlify-plugin-npm-install"
+
+  [plugins.inputs]
+  packages = "airtable-node"
