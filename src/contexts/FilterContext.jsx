@@ -16,7 +16,7 @@ export const FilterProvider = ({ children }) => {
       ...new Set(allProjects.map((item) => item.category)),
     ];
     setCategories(allCategories);
-  }, [projects]);
+  }, [projects, allProjects]);
 
   const filterProjects = (category) => {
     let tempProjects = [...allProjects];
