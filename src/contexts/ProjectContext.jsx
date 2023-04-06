@@ -19,11 +19,14 @@ export const ProjectsProvider = ({ children }) => {
         return { ...prev, projectsLoading: true };
       });
       const response = await axios.get(url);
+      console.log(response)
       const projects = response.data;
       setData((prev) => {
         return { ...prev, projects, projectsLoading: false };
       });
     } catch (error) {
+    console.log(error);
+
       setData((prev) => {
         return { ...prev, projectsError:true, projectsLoading: false };
       });

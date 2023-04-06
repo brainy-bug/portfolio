@@ -20,8 +20,8 @@ function App() {
           <Route path='resume' element={<Resume />} />
           <Route path='portfolio' element={<Portfolio />} />
           <Route path='contact' element={<Contact />} />
-        <Route path='*' element={<Error />} />
         </Route>
+        <Route path='*' element={<Error />} />
       </Routes>
     </BrowserRouter>
   );
