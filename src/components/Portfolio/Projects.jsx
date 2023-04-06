@@ -58,10 +58,9 @@ const Projects = () => {
 
                     <img src={imageURL} alt={name} loading='lazy' />
                   </figure>
-
-                  <h3 className='project-title'>{name}</h3>
-                  <p className='project-category'>{category}</p>
                 </a>
+                <h3 className='project-title'>{name}</h3>
+                <p className='project-category'>{category}</p>
               </li>
             </AnimatedSection>
           );
