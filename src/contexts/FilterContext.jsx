@@ -11,12 +11,15 @@ export const FilterProvider = ({ children }) => {
 
   useEffect(() => {
     setAllProjects([...projects]);
+  }, [projects]);
+
+  useEffect(() => {
     const allCategories = [
       "All",
       ...new Set(allProjects.map((item) => item.category)),
     ];
     setCategories(allCategories);
-  }, [projects, allProjects]);
+  }, [allProjects]);
 
   const filterProjects = (category) => {
     let tempProjects = [...allProjects];
@@ -31,7 +34,7 @@ export const FilterProvider = ({ children }) => {
 
   useEffect(() => {
     filterProjects(singleCategory);
-  }, [projects, singleCategory]);
+  }, [allProjects, singleCategory]);
 
   return (
     <FilterContext.Provider
