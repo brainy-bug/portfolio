@@ -1,34 +1,34 @@
-// const Testimonials = () => {
-//   return (
-// //     <section class="testimonials">
+import { useTestimonialsContext } from "../contexts/TestimonialContext";
 
-// //           <h3 class="h3 testimonials-title">Testimonials</h3>
+const Testimonials = () => {
+  const { testimonials, testimonialsLoading } = useTestimonialsContext();
 
-// //           <ul class="testimonials-list has-scrollbar">
+  return (
+    <section class='testimonials'>
+      <h3 class='h3 testimonials-title'>Testimonials</h3>
 
-// //             <li class="testimonials-item">
-// //               <div class="content-card" data-testimonials-item>
+      <ul class='testimonials-list has-scrollbar'>
+        {testimonials.map((item) => {
+          const { id, name, testimonial, imageURL } = item;
 
-// //                 <figure class="testimonials-avatar-box">
-// //                   <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar/>
-// //                 </figure>
+          return (
+            <li class='testimonials-item' key={id}>
+              <div class='content-card'>
+                <figure class='testimonials-avatar-box'>
+                  <img src={imageURL} alt={name} width='60' />
+                </figure>
 
-// //                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+                <h4 class='h4 testimonials-item-title'>{name}</h4>
 
-// //                 <div class="testimonials-text" data-testimonials-text>
-// //                   <p>
-// //                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-// //                     lot of experience
-// //                     and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-// //                     consectetur adipiscing
-// //                     elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-// //                   </p>
-// //                 </div>
-
-// //               </div>
-// //             </li>
-// // </ul>
-// // </section>
-//   )
-// }
-// export default Testimonials
+                <div class='testimonials-text'>
+                  <p>{testimonial}</p>
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+};
+export default Testimonials;

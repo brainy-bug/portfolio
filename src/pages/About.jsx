@@ -1,5 +1,6 @@
 import AnimatedSection from "../components/AnimatedSection";
 import Services from "../components/Portfolio/Services";
+import Testimonials from "../components/Testimonials";
 
 import { useAppContext } from "../contexts/AppContext";
 
@@ -29,8 +30,8 @@ const About = () => {
           </p>
         </AnimatedSection>
       </section>
-
       <Services />
+      <Testimonials />
     </article>
   );
 };
