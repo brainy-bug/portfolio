@@ -1,4 +1,4 @@
-import React, {useState}from "react";
+import React, { useState } from "react";
 // import UnderConstruction from "../components/UnderConstruction";
 import { useAppContext } from "../contexts/AppContext";
 
@@ -18,10 +18,8 @@ const Portfolio = () => {
           <h2 className='h2 article-title'>Portfolio</h2>
         </AnimatedSection>
       </header>
-      <AnimatedSection>
-        {categories.length > 1 && <FilterSelectBox />}
-        <Projects />
-      </AnimatedSection>
+      {categories.length > 1 && <FilterSelectBox />}
+      <Projects />
     </article>
   );
 };

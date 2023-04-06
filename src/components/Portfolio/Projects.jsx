@@ -2,6 +2,7 @@ import { useFilterContext } from "../../contexts/FilterContext";
 import { useProjectsContext } from "../../contexts/ProjectContext";
 
 import { ColorRing } from "react-loader-spinner";
+import AnimatedSection from "../AnimatedSection";
 
 const Projects = () => {
   const { filteredProjects: projects } = useFilterContext();
@@ -32,10 +33,7 @@ const Projects = () => {
     return (
       <section style={styles.container}>
         <h2 className='h2'>Unable to fetch projects</h2>
-        <button
-          className='btn'
-          onClick={() => window.location.reload()}
-        >
+        <button className='btn' onClick={() => window.location.reload()}>
           reload
         </button>
       </section>
@@ -48,22 +46,24 @@ const Projects = () => {
           const { id, name, category, projectURL, imageURL } = project;
 
           return (
-            <li className='project-item  active' key={id}>
-              <a href={projectURL}>
-                <figure className='project-img'>
-                  {projectURL !== "#" && (
-                    <div className='project-item-icon-box'>
-                      <ion-icon name='eye-outline'></ion-icon>
-                    </div>
-                  )}
+            <AnimatedSection>
+              <li className='project-item  active' key={id}>
+                <a href={projectURL}>
+                  <figure className='project-img'>
+                    {projectURL !== "#" && (
+                      <div className='project-item-icon-box'>
+                        <ion-icon name='eye-outline'></ion-icon>
+                      </div>
+                    )}
 
-                  <img src={imageURL} alt={name} loading='lazy' />
-                </figure>
+                    <img src={imageURL} alt={name} loading='lazy' />
+                  </figure>
 
-                <h3 className='project-title'>{name}</h3>
-                <p className='project-category'>{category}</p>
-              </a>
-            </li>
+                  <h3 className='project-title'>{name}</h3>
+                  <p className='project-category'>{category}</p>
+                </a>
+              </li>
+            </AnimatedSection>
           );
         })}
       </ul>
