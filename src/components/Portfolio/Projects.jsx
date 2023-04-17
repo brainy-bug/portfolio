@@ -1,12 +1,21 @@
+import { useEffect } from "react";
 import { useFilterContext } from "../../contexts/FilterContext";
-import { useProjectsContext } from "../../contexts/ProjectContext";
+import { useFetchContext } from "../../contexts/FetchContext";
 
 import { ColorRing } from "react-loader-spinner";
 import AnimatedSection from "../AnimatedSection";
 
+
+import { projects_url as url } from "../../utils/constants";
+
 const Projects = () => {
   const { filteredProjects: projects } = useFilterContext();
-  const { projectsError, projectsLoading } = useProjectsContext();
+  const { fetchTable, fetchError, fetchLoading } = useFetchContext();
+
+  useEffect(() => {
+    fetchTable(url, "projects");
+  }, []);
+
 
   const styles = {
     container: {
@@ -22,14 +31,14 @@ const Projects = () => {
     },
   };
 
-  if (projectsLoading)
+  if (fetchLoading)
     return (
       <section style={styles.container}>
         <ColorRing />;
       </section>
     );
 
-  if (projectsError)
+  if (fetchError)
     return (
       <section style={styles.container}>
         <h2 className='h2'>Unable to fetch projects</h2>
@@ -42,7 +51,7 @@ const Projects = () => {
   return (
     <section className='projects'>
       <ul className='project-list'>
-        {projects.map((project) => {
+        {projects?.map((project) => {
           const { id, name, category, projectURL, imageURL } = project;
 
           return (

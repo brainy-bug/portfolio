@@ -1,9 +1,9 @@
 import React, { useContext, useState, useEffect } from "react";
-import { useProjectsContext } from "./ProjectContext";
+import { useFetchContext } from "./FetchContext";
 
 const FilterContext = React.createContext();
 export const FilterProvider = ({ children }) => {
-  const { projects } = useProjectsContext();
+  const { projects } = useFetchContext();
   const [singleCategory, setSingleCategory] = useState("All");
   const [categories, setCategories] = useState([]);
   const [allProjects, setAllProjects] = useState([]);

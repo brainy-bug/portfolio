@@ -5,7 +5,7 @@ import Airtable from "airtable-node";
 
 const airtable = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY })
   .base(process.env.AIRTABLE_BASE)
-  .table(process.env.AIRTABLE_TABLE);
+  .table("projects");
 
 export async function handler() {
   try {
