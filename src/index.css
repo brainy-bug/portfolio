@@ -694,7 +694,7 @@ main {
 }
 
 .overlay.active {
-  opacity: 0.8;
+  opacity: 0.4;
   visibility: visible;
   pointer-events: all;
 }
@@ -706,7 +706,7 @@ main {
   margin: 15px 12px;
   border: 1px solid var(--jet);
   border-radius: 14px;
-  box-shadow: var(--shadow-5);
+  box-shadow: var(--shadow-4);
   transform: scale(1.2);
   opacity: 0;
   transition: var(--transition-1);
@@ -756,17 +756,12 @@ main {
 }
 
 .modal-title {
+  margin-top: 16px;
   margin-bottom: 4px;
 }
 
-.modal-content time {
-  font-size: var(--fs-6);
-  color: var(--light-gray-70);
-  font-weight: var(--fw-300);
-  margin-bottom: 10px;
-}
-
 .modal-content p {
+  margin-top: 24px;
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -2053,8 +2048,8 @@ textarea.form-input::-webkit-resizer {
   margin-bottom: 20px;
 }
 
-
-.error-text{color: var(--light-gray);
+.error-text {
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;

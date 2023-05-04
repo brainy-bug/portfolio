@@ -1,35 +1,58 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useFetchContext } from "../contexts/FetchContext";
 import { testimonials_url as url } from "../utils/constants";
+import ModalContainer from "./Modal/ModalContainer";
 
 const Testimonials = () => {
   const { fetchTable, testimonials } = useFetchContext();
+  const [showModal, setShowModal] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
+
   useEffect(() => {
     fetchTable(url, "testimonials");
   }, []);
 
-  return (
-    <section class='testimonials'>
-      <h3 class='h3 testimonials-title'>Testimonials</h3>
+  const handleClick = (content) => {
+    setModalContent(content);
+    setShowModal(true);
+  };
 
-      <ul class='testimonials-list has-scrollbar'>
+  return (
+    <section className='testimonials'>
+      <h3 className='h3 testimonials-title'>Testimonials</h3>
+
+      <ul className='testimonials-list has-scrollbar'>
         {testimonials?.map((item) => {
           const { id, name, testimonial, imageURL } = item;
 
           return (
-            <li class='testimonials-item' key={id}>
-              <div class='content-card'>
-                <figure class='testimonials-avatar-box'>
-                  <img src={imageURL} alt={name} width='60' />
-                </figure>
+            <>
+              <li
+                className='testimonials-item'
+                key={id}
+                onClick={() => handleClick(item)}
+              >
+                <div className='content-card'>
+                  <figure className='testimonials-avatar-box'>
+                    <img src={imageURL} alt={name} width='60' />
+                  </figure>
 
-                <h4 class='h4 testimonials-item-title'>{name}</h4>
+                  <h4 className='h4 testimonials-item-title'>{name}</h4>
 
-                <div class='testimonials-text'>
-                  <p>{testimonial}</p>
+                  <div className='testimonials-text'>
+                    <p>{testimonial}</p>
+                    <p>{testimonial}</p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
+              {showModal && (
+                <ModalContainer
+                  showModal={showModal}
+                  setShowModal={setShowModal}
+                  {...modalContent}
+                />
+              )}
+            </>
           );
         })}
       </ul>
