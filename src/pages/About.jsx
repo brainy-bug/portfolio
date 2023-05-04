@@ -31,7 +31,9 @@ const About = () => {
         </AnimatedSection>
       </section>
       <Services />
-      <Testimonials />
+      <AnimatedSection>
+        <Testimonials />
+      </AnimatedSection>
     </article>
   );
 };
