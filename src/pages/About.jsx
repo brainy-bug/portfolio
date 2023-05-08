@@ -1,4 +1,5 @@
 import AnimatedSection from "../components/AnimatedSection";
+import Clients from "../components/Clients";
 import Services from "../components/Portfolio/Services";
 import Testimonials from "../components/Testimonials";
 
@@ -33,6 +34,9 @@ const About = () => {
       <Services />
       <AnimatedSection>
         <Testimonials />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Clients />
       </AnimatedSection>
     </article>
   );
