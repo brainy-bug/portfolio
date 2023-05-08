@@ -1,10 +1,12 @@
 import designSVG from "../assets/images/icon-design.svg";
 import webSVG from "../assets/images/icon-dev.svg";
+
+// logos
 import larfatLogistics from "../assets/images/larfat-logistics.png";
 import mssnUi from "../assets/images/mssn-ui.png";
-import aloeda from "../assets/images/aloeda's-scent.png";
 import revive from "../assets/images/revive-digital-sol.png";
-import itesiwaju from "../assets/images/itesiwaju-oyo.png";
+import maniBakes from "../assets/images/maniBakes.png";
+import askhub from "../assets/images/askhub.png";
 
 export const contacts = [
   {
@@ -144,7 +146,13 @@ export const skills = [
   // },
 ];
 
-export const clients = [larfatLogistics, mssnUi, aloeda, revive, itesiwaju];
+export const clients = [
+  larfatLogistics,
+  mssnUi,
+  revive,
+  maniBakes,
+  askhub,
+];
 
 export const category = ["All", "Graphic design", "Web development"];
 export const projects_url = "/.netlify/functions/projects";
