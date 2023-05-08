@@ -1,4 +1,4 @@
-import { clients } from "../utils/constants";
+import { clients } from "../../utils/constants";
 
 const Clients = () => {
   return (
