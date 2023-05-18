@@ -1,4 +1,4 @@
-# Yinkafolio
+# Personal Portfolio
 
 This is my portfolio website! It showcases my skills, experiences, and projects as a developer and designer.
 
@@ -7,7 +7,7 @@ This is my portfolio website! It showcases my skills, experiences, and projects 
 This website is built using the following technologies:
 
 - React
-- Vercel for hosting
+- Netlify for hosting
 
 ## Features
 
