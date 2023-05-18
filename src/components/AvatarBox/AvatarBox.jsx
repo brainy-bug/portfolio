@@ -5,11 +5,11 @@ const AvatarBox = ({ isActive, setIsActive }) => {
   return (
     <div className='sidebar-info'>
       <figure className='avatar-box'>
-        <img src={avatarIMG} alt='Yinka' width='80' />
+        <img src={avatarIMG} alt='Rasheed' width='80' />
       </figure>
 
       <div className='info-content'>
-        <h1 className='name'>Olayinka Madamidola</h1>
+        <h1 className='name'>Abdulrasheed Madamidola</h1>
 
         <p className='title'>Frontend developer</p>
       </div>

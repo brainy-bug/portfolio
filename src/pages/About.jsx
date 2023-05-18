@@ -1,7 +1,7 @@
-import AnimatedSection from "../components/AnimatedSection";
+import AnimatedSection from "../components/Animations/AnimatedSection";
 import Clients from "../components/Clients";
 import Services from "../components/Portfolio/Services";
-import Testimonials from "../components/Testimonials";
+import Testimonials from "../components/Portfolio/Testimonials";
 
 import { useAppContext } from "../contexts/AppContext";
 

@@ -12,10 +12,10 @@ const Resume = () => {
       <header>
         <h2 className='h2 article-title'>Resume</h2>
       </header>
-      <UnderConstruction />
-      {/* <Education /> */}
+      {/* <UnderConstruction /> */}
+      <Education />
       {/* <Experience/> */}
-      {/* <Skills/> */}
+      <Skills/>
     </article>
   );
 };

@@ -4,7 +4,7 @@ import { useAppContext } from "../contexts/AppContext";
 
 import Projects from "../components/Portfolio/Projects";
 import FilterSelectBox from "../components/Filters/FilterSelectBox";
-import AnimatedSection from "../components/AnimatedSection";
+import AnimatedSection from "../components/Animations/AnimatedSection";
 import { useFilterContext } from "../contexts/FilterContext";
 
 const Portfolio = () => {

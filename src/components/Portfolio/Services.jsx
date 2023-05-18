@@ -1,5 +1,5 @@
 import { services } from "../../utils/constants";
-import AnimatedSection from "../AnimatedSection";
+import AnimatedSection from "../Animations/AnimatedSection";
 
 const Services = () => {
   return (

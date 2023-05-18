@@ -129,21 +129,21 @@ export const skills = [
     progress: "85",
   },
   {
-    skill: "React",
-    progress: "68",
+    skill: "Teamwork",
+    progress: "80",
   },
-  // {
-  //   skill: "Graphic Design",
-  //   progress: "85",
-  // },
-  // {
-  //   skill: "Graphic Design",
-  //   progress: "85",
-  // },
-  // {
-  //   skill: "Graphic Design",
-  //   progress: "85",
-  // },
+  {
+    skill: "Continuous Learning",
+    progress: "88",
+  },
+  {
+    skill: "Attention to Detail",
+    progress: "78",
+  },
+  {
+    skill: "Communication",
+    progress: "73",
+  },
 ];
 
 export const clients = [

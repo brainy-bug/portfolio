@@ -1,7 +1,7 @@
 import React from "react";
-import ContactForm from "../components/Contact/contactForm";
+import ContactForm from "../components/Form/contactForm";
 import Map from "../components/Map";
-import AnimatedSection from "../components/AnimatedSection";
+import AnimatedSection from "../components/Animations/AnimatedSection";
 
 import { useAppContext } from "../contexts/AppContext";
 

@@ -3,7 +3,7 @@ import { useFilterContext } from "../../contexts/FilterContext";
 import { useFetchContext } from "../../contexts/FetchContext";
 
 import { ColorRing } from "react-loader-spinner";
-import AnimatedSection from "../AnimatedSection";
+import AnimatedSection from "../Animations/AnimatedSection";
 
 
 import { projects_url as url } from "../../utils/constants";
