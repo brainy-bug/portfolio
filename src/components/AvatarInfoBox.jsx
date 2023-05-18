@@ -10,7 +10,7 @@ const AvatarInfoBox = ({ isActive, setIsActive }) => {
       </figure>
 
       <div className='info-content'>
-        <h1 className='name'>Abdulrasheed Madamidola</h1>
+        <h1 className='name'>Olayinka Madamidola</h1>
 
         <p className='title'>Frontend developer</p>
       </div>
