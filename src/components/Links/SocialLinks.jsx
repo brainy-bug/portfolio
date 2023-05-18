@@ -1,7 +1,7 @@
 import { socialLinks } from "../../utils/constants";
 import React from "react";
 
-const SocialLists = () => {
+const SocialLinks = () => {
   return (
     <ul className='social-list'>
       {socialLinks.map((item) => {
@@ -17,4 +17,4 @@ const SocialLists = () => {
     </ul>
   );
 };
-export default SocialLists;
+export default SocialLinks;

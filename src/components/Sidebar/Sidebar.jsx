@@ -1,20 +1,20 @@
 import { useState } from "react";
 
-import AvatarInfoBox from "../AvatarInfoBox";
-import ContactLists from "../Contact/ContactLists";
-import SocialLists from "../Contact/SocialLists";
+import AvatarBox from "../AvatarBox";
+import ContactLinks from "../Links/ContactLinks";
+import SocialLinks from "../Links/SocialLinks";
 
 const Sidebar = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
     <aside className={`${isActive ? "sidebar active" : "sidebar"} `}>
-      <AvatarInfoBox isActive={isActive} setIsActive={setIsActive} />
+      <AvatarBox isActive={isActive} setIsActive={setIsActive} />
       <div className='sidebar-info_more'>
         <div className='separator'></div>
-        <ContactLists />
+        <ContactLinks />
         <div className='separator'></div>
-        <SocialLists />
+        <SocialLinks />
       </div>
     </aside>
   );

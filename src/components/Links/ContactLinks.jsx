@@ -1,6 +1,6 @@
 import { contacts } from "../../utils/constants";
 
-const ContactLists = () => {
+const ContactLinks = () => {
   return (
     <ul className='contacts-list'>
       {contacts.map((item) => {
@@ -29,4 +29,4 @@ const ContactLists = () => {
   );
 };
 
-export default ContactLists;
+export default ContactLinks;

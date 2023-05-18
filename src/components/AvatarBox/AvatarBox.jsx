@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import avatarIMG from "../assets/images/my-avatar.png";
+import avatarIMG from "../../assets/images/my-avatar.png";
 
-const AvatarInfoBox = ({ isActive, setIsActive }) => {
-
+const AvatarBox = ({ isActive, setIsActive }) => {
   return (
     <div className='sidebar-info'>
       <figure className='avatar-box'>
@@ -28,4 +27,4 @@ const AvatarInfoBox = ({ isActive, setIsActive }) => {
   );
 };
 
-export default AvatarInfoBox;
+export default AvatarBox;

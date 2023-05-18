@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { useFetchContext } from "../../contexts/FetchContext";
-import { testimonials_url as url } from "../../utils/constants";
-import ModalContainer from "../Modal/ModalContainer";
+import { useFetchContext } from "../contexts/FetchContext";
+import { testimonials_url as url } from "../utils/constants";
+import ModalContainer from "./Modal/ModalContainer";
 
 const Testimonials = () => {
   const { fetchTable, testimonials } = useFetchContext();
