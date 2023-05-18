@@ -8,7 +8,7 @@ const TimelineList = ({ data }) => {
 
         return (
           <li className='timeline-item'>
-            <h4 className='h3 timeline-item-title'>{title}</h4>
+            <h4 className='h4 timeline-item-title'>{title}</h4>
             <span>{`${entry_year} — ${final_year}`}</span>
             {text && <p className='timeline-text'>{text}</p>}
           </li>

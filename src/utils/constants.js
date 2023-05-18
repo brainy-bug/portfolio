@@ -111,7 +111,7 @@ export const education = [
     id: 1,
     title: "University of Ibadan",
     entry_year: "2019",
-    final_year: "present",
+    final_year: "Present",
     text: "Studying Agricultural and Environmental Engineering",
   },
   {
@@ -120,6 +120,23 @@ export const education = [
     entry_year: "2012",
     final_year: "2018",
     text: "High school",
+  },
+];
+
+export const experience = [
+  {
+    id: 1,
+    title: "Graphic Designer",
+    entry_year: "Sep 2022",
+    final_year: "Present",
+    text: "Revive Digital Solutions (Part-time)",
+  },
+  {
+    id: 2,
+    title: "Frontend Developer Intern",
+    entry_year: "Sep 2022",
+    final_year: "Dec 2022",
+    text: "Zuri Team",
   },
 ];
 
@@ -146,13 +163,7 @@ export const skills = [
   },
 ];
 
-export const clients = [
-  larfatLogistics,
-  mssnUi,
-  revive,
-  maniBakes,
-  askhub,
-];
+export const clients = [larfatLogistics, mssnUi, revive, maniBakes, askhub];
 
 export const category = ["All", "Graphic design", "Web development"];
 export const projects_url = "/.netlify/functions/projects";
