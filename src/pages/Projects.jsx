@@ -7,7 +7,7 @@ import FilterSelectBox from "../components/Filters/FilterSelectBox";
 import AnimatedSection from "../components/Animations/AnimatedSection";
 import { useFilterContext } from "../contexts/FilterContext";
 
-const Portfolio = () => {
+const Projects = () => {
   const { isPageActive } = useAppContext();
   const { categories } = useFilterContext();
 
@@ -15,7 +15,7 @@ const Portfolio = () => {
     <article className={`${!isPageActive ? "portfolio active" : "portfolio"}`}>
       <header>
         <AnimatedSection>
-          <h2 className='h2 article-title'>Portfolio</h2>
+          <h2 className='h2 article-title'>Projects</h2>
         </AnimatedSection>
       </header>
       {categories.length > 1 && <FilterSelectBox />}
@@ -24,4 +24,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

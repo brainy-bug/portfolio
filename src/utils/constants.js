@@ -79,8 +79,8 @@ export const navLinks = [
   },
   {
     id: 3,
-    text: "Portfolio",
-    url: "/portfolio",
+    text: "Projec",
+    url: "/projects",
   },
   {
     id: 4,

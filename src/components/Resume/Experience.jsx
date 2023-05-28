@@ -1,4 +1,5 @@
 import { experience } from "../../utils/constants";
+import AnimatedSection from "../Animations/AnimatedSection";
 import TimelineList from "../TimelineList";
 import React from "react";
 

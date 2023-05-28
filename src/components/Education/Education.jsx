@@ -1,6 +1,9 @@
-import { education } from "../../utils/constants";
-import TimelineList from "../TimelineList";
 import React from "react";
+
+import AnimatedSection from "../Animations/AnimatedSection";
+import TimelineList from "../TimelineList";
+
+import { education } from "../../utils/constants";
 
 const Education = () => {
   return (

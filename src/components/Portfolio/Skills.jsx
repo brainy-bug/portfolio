@@ -1,10 +1,11 @@
 import { skills } from "../../utils/constants";
 import React from "react";
+import AnimatedSection from "../Animations/AnimatedSection";
 
 const Skills = () => {
   return (
-    <section className='skill'>
-      <h3 className='h3 skills-title'>Non Technical skills</h3>
+    <AnimatedSection className='skill'>
+      <h3 className='h3 skills-title'>Non-Technical skills</h3>
 
       <ul className='skills-list content-card'>
         {skills.map(({ skill, progress }) => {
@@ -24,7 +25,7 @@ const Skills = () => {
           );
         })}
       </ul>
-    </section>
+    </AnimatedSection>
   );
 };
 export default Skills;
