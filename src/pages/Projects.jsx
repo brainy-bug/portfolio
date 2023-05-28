@@ -7,7 +7,7 @@ import FilterSelectBox from "../components/Filters/FilterSelectBox";
 import AnimatedSection from "../components/Animations/AnimatedSection";
 import { useFilterContext } from "../contexts/FilterContext";
 
-const Projects = () => {
+const Portfolio = () => {
   const { isPageActive } = useAppContext();
   const { categories } = useFilterContext();
 
@@ -24,4 +24,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Portfolio;
