@@ -17,9 +17,9 @@ This website is built using the following technologies:
 
 The Home/About page also lists my technical skills and programming languages with proficiency levels.
 
-### Chatbot (coming soon)
+### Live chat
 
-I'm currently developing a chatbot feature that will allow visitors to interact with me and get answers to frequently asked questions. Stay tuned for updates!
+A feature that allows visitors to interact with me live and get answers to questions they may have. 
 
 ## Getting started
 
