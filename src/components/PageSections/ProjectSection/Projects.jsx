@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import { useFilterContext } from "../../contexts/FilterContext";
-import { useFetchContext } from "../../contexts/FetchContext";
+
+import { useFilterContext } from "../../../contexts/FilterContext";
+import { useFetchContext } from "../../../contexts/FetchContext";
 
 import { ColorRing } from "react-loader-spinner";
-import AnimatedSection from "../Animations/AnimatedSection";
+import FadeIn from "../../FadeIn";
 
-
-import { projects_url as url } from "../../utils/constants";
+import { projects_url as url } from "../../../utils/constants";
 
 const Projects = () => {
   const { filteredProjects: projects } = useFilterContext();
@@ -15,7 +15,6 @@ const Projects = () => {
   useEffect(() => {
     fetchTable(url, "projects");
   }, []);
-
 
   const styles = {
     container: {
@@ -55,7 +54,7 @@ const Projects = () => {
           const { id, name, category, projectURL, imageURL } = project;
 
           return (
-            <AnimatedSection>
+            <FadeIn>
               <li className='project-item  active' key={id}>
                 <a href={projectURL}>
                   <figure className='project-img'>
@@ -71,7 +70,7 @@ const Projects = () => {
                 <h3 className='project-title'>{name}</h3>
                 <p className='project-category'>{category}</p>
               </li>
-            </AnimatedSection>
+            </FadeIn>
           );
         })}
       </ul>

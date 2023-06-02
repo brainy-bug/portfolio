@@ -1,7 +1,6 @@
-import { experience } from "../../utils/constants";
-import AnimatedSection from "../Animations/AnimatedSection";
-import TimelineList from "../TimelineList";
-import React from "react";
+import TimelineList from "./TimelineList";
+
+import { experience } from "../../../data/resume-data";
 
 const Experience = () => {
   return (

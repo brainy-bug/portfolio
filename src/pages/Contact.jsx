@@ -1,7 +1,5 @@
-import React from "react";
-import ContactForm from "../components/Form/ContactForm";
-import Map from "../components/Map";
-import AnimatedSection from "../components/Animations/AnimatedSection";
+import { ContactForm, Map } from "../components/PageSections/ContactSection";
+import FadeIn from "../components/FadeIn";
 
 import { useAppContext } from "../contexts/AppContext";
 
@@ -11,16 +9,16 @@ const Contact = () => {
   return (
     <article className={`${!isPageActive ? "contact active" : "contact"}`}>
       <header>
-        <AnimatedSection>
+        <FadeIn>
           <h2 className='h2 article-title'>Get in touch</h2>
-        </AnimatedSection>
+        </FadeIn>
       </header>
-      <AnimatedSection>
+      <FadeIn>
         <Map />
-      </AnimatedSection>
-      <AnimatedSection>
+      </FadeIn>
+      <FadeIn>
         <ContactForm />
-      </AnimatedSection>
+      </FadeIn>
     </article>
   );
 };

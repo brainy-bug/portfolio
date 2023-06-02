@@ -1,9 +1,8 @@
 import React from "react";
 
-import AnimatedSection from "../Animations/AnimatedSection";
-import TimelineList from "../TimelineList";
+import TimelineList from "./TimelineList";
 
-import { education } from "../../utils/constants";
+import { education } from "../../../data/resume-data";
 
 const Education = () => {
   return (

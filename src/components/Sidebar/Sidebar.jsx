@@ -1,8 +1,10 @@
 import { useState } from "react";
 
-import AvatarBox from "../AvatarBox";
-import ContactLinks from "../Links/ContactLinks";
-import SocialLinks from "../Links/SocialLinks";
+import {
+  AvatarBox,
+  ContactLinks,
+  SocialLinks,
+} from "../PageSections/AboutSection";
 
 const Sidebar = () => {
   const [isActive, setIsActive] = useState(false);

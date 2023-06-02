@@ -1,16 +1,16 @@
-import { services } from "../../utils/constants";
-import AnimatedSection from "../Animations/AnimatedSection";
+import { services } from "../../../data/services";
+import FadeIn from "../../FadeIn";
 
 const Services = () => {
   return (
     <section className='service'>
-      <AnimatedSection>
+      <FadeIn>
         <h3 className='h3 service-title'>What i'm doing</h3>
-      </AnimatedSection>
+      </FadeIn>
       <ul className='service-list'>
         {services.map(({ title, id, image, description }) => {
           return (
-            <AnimatedSection key={id}>
+            <FadeIn key={id}>
               <li className='service-item'>
                 <div className='service-icon-box'>
                   <img src={image} alt={title} width='40' />
@@ -22,7 +22,7 @@ const Services = () => {
                   <p className='service-item-text'>{description}</p>
                 </div>
               </li>
-            </AnimatedSection>
+            </FadeIn>
           );
         })}
       </ul>

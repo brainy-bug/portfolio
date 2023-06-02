@@ -1,10 +1,9 @@
-import { skills } from "../../utils/constants";
-import React from "react";
-import AnimatedSection from "../Animations/AnimatedSection";
+import { skills } from "../../../data/resume-data";
+import FadeIn from "../../FadeIn";
 
 const Skills = () => {
   return (
-    <AnimatedSection className='skill'>
+    <FadeIn className='skill'>
       <h3 className='h3 skills-title'>Non-Technical skills</h3>
 
       <ul className='skills-list content-card'>
@@ -25,7 +24,7 @@ const Skills = () => {
           );
         })}
       </ul>
-    </AnimatedSection>
+    </FadeIn>
   );
 };
 export default Skills;

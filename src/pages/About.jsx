@@ -1,7 +1,9 @@
-import AnimatedSection from "../components/Animations/AnimatedSection";
-import Clients from "../components/Clients";
-import Services from "../components/Portfolio/Services";
-import Testimonials from "../components/Portfolio/Testimonials";
+import FadeIn from "../components/FadeIn";
+import {
+  Clients,
+  Services,
+  Testimonials,
+} from "../components/PageSections/AboutSection";
 
 import { useAppContext } from "../contexts/AppContext";
 
@@ -11,33 +13,33 @@ const About = () => {
   return (
     <article className={`${!isPageActive ? "about active" : "about"}`}>
       <header>
-        <AnimatedSection>
+        <FadeIn>
           <h2 className='h2 article-title'>About me</h2>
-        </AnimatedSection>
+        </FadeIn>
       </header>
       <section className='about-text'>
-        <AnimatedSection>
+        <FadeIn>
           <p>
             Hello 👋, I am a frontend developer with a specialization in React
             and a graphic designer hailing from Lagos, Nigeria. I enjoy turning
             complex problems into simple, beautiful and intuitive designs.
           </p>
-        </AnimatedSection>
-        <AnimatedSection>
+        </FadeIn>
+        <FadeIn>
           <p>
             I design websites that are both practical and visually appealing,
             with a personal touch. My goal is to showcase your message and
             identity in the most creative way possible.
           </p>
-        </AnimatedSection>
+        </FadeIn>
       </section>
       <Services />
-      <AnimatedSection>
+      <FadeIn>
         <Testimonials />
-      </AnimatedSection>
-      <AnimatedSection>
+      </FadeIn>
+      <FadeIn>
         <Clients />
-      </AnimatedSection>
+      </FadeIn>
     </article>
   );
 };

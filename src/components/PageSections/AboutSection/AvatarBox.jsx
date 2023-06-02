@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import avatarIMG from "../../assets/images/my-avatar.png";
+import avatarIMG from "../../../assets/images/my-avatar.png";
 
 const AvatarBox = ({ isActive, setIsActive }) => {
   return (

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useFilterContext } from "../../contexts/FilterContext";
+
+import { useFilterContext } from "../../../contexts/FilterContext";
 import FilterSelectList from "./FilterSelectList";
 
 const FilterSelectBox = () => {

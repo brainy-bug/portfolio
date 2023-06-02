@@ -1,4 +1,4 @@
-import { contacts } from "../../utils/constants";
+import { contacts } from "../../../utils/links";
 
 const ContactLinks = () => {
   return (

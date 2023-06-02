@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import FadeIn from "../components/FadeIn";
 // import UnderConstruction from "../components/UnderConstruction";
-import { useAppContext } from "../contexts/AppContext";
 
-import Projects from "../components/Portfolio/Projects";
-import FilterSelectBox from "../components/Filters/FilterSelectBox";
-import AnimatedSection from "../components/Animations/AnimatedSection";
+import {
+  Projects,
+  FilterSelectBox,
+} from "../components/PageSections/ProjectSection";
+
 import { useFilterContext } from "../contexts/FilterContext";
+import { useAppContext } from "../contexts/AppContext";
 
 const Portfolio = () => {
   const { isPageActive } = useAppContext();
@@ -14,9 +16,9 @@ const Portfolio = () => {
   return (
     <article className={`${!isPageActive ? "portfolio active" : "portfolio"}`}>
       <header>
-        <AnimatedSection>
+        <FadeIn>
           <h2 className='h2 article-title'>Projects</h2>
-        </AnimatedSection>
+        </FadeIn>
       </header>
       {categories.length > 1 && <FilterSelectBox />}
       <Projects />

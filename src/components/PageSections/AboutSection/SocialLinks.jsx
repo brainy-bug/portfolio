@@ -1,5 +1,4 @@
-import { socialLinks } from "../../utils/constants";
-import React from "react";
+import { socialLinks } from "../../../utils/links";
 
 const SocialLinks = () => {
   return (

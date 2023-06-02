@@ -1,8 +1,11 @@
-import React from "react";
-import Skills from "../components/Portfolio/Skills";
+
+import {
+  Skills,
+  Education,
+  Experience,
+} from "../components/PageSections/ResumeSection";
 import UnderConstruction from "../components/UnderConstruction";
-import Education from "../components/Education";
-import Experience from "../components/Resume/Experience";
+
 import { useAppContext } from "../contexts/AppContext";
 
 const Resume = () => {

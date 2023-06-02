@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
+
 import { useAppContext } from "../../contexts/AppContext";
-import { navLinks } from "../../utils/constants";
+
+import { navLinks } from "../../utils/links";
 
 const Navbar = () => {
   const { isPageActive } = useAppContext();
