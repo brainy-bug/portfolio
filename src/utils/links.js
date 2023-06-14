@@ -52,7 +52,7 @@ export const socialLinks = [
   {
     id: 5,
     icon: "logo-github",
-    url: "https://github.com/devyinka",
+    url: "https://github.com/brainy-bug",
   },
 ];
 
