@@ -23,7 +23,7 @@ A feature that allows visitors to interact with me live and get answers to quest
 
 ## Getting started
 
-Click on -> [my portfolio](https://rashdev.netlify.app) to view the website on any web browser.
+Click on -> [my portfolio](https://codewithyinka.netlify.app) to view the website on any web browser.
 
 ## Contributions
 
